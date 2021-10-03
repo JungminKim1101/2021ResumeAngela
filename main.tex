@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Angela (Jungmin) Kim
+% Based off of: https://github.com/jakeryang/resume & Harshibar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Angela (Jungmin) Kim} \\ \vspace{5pt}
+    \small \faPhone* \texttt{949.677.9115} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{crm05319@gmail.com} \hspace{1pt} $|$ 
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{38 Sebastian, Irvine CA 92602}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PSDL}{Jun. 2021 -- Aug. 2021}
+      {Front End Developer Internship}{Seoul, Korea}
+      \resumeItemListStart
+        \resumeItem{\textbf{Front-end development} of the home page of their new product called taptag, which is a nfc tag that can show if the product is legit or not}
+        \resumeItem{Built the home page with React js, html, css, and javascript and took my time replicating other pages as it was my first time with front end}
+        \resumeItem{Learned what happens behind the screen of the nfc tag and learned how to do back end such as amazon sql server}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Discovery Science}{2016 -- 2020}
+      {Staff}{Santa Ana, CA}
+      \resumeItemListStart
+        \resumeItem{Volunteered and worked from December 2016 to January 2020 as a seasonal employee}
+        \resumeItem{Helped kids to craft and enjoy exhibits and cleaned areas such as the kitchen}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeProjectHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Game App}}
+          \resumeItemListStart
+            \resumeItem{Developed a gaming app for my school project through an android app inventor. It had 3 different  games in one app, where the user can choose which game to play}
+         \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Music App}}
+          \resumeItemListStart
+            \resumeItem{Developed an app which generates a random melody, depending on what note the user puts in. This was created during the Hello World Hackathon. We used java programming to make the notes and  moved the code to an android app inventor}
+         \resumeItemListEnd
+          
+      \resumeProjectHeading
+         {\textbf{Scary Game}}
+          \resumeItemListStart
+            \resumeItem{Developed a story game through unity, where a girl must find her way out of the house, while  avoiding the monster (Windows game). This was developed during the BoilerMake Hackathon. We were  not able to finish it; however, we were able to make the character move through different areas}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+         {\textbf{Modus.ai}}
+          \resumeItemListStart
+            \resumeItem{Currently developing a journal website that can read the user's journal and have the ai read the user's mood through it. I am working on the front end side of this journal, where I create the dashboard, login page, journal editing page, and its mood analysis dashboard}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+         {\textbf{Kaggle Competition}}
+          \resumeItemListStart
+            \resumeItem{Currently working on the Kaggle competition called "Bank Lending Prediction Task" for my class CS373, where we have to incorporate python to see if the lender whether or not they will payoff their loan}
+          \resumeItemListEnd
+          
+    \resumeProjectHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University}{Aug. 2019 -- Dec 2022}
+      {Bachelor in Computer Science and Minor in Arts and Design}{West Lafayette, Indiana}
+      	\resumeItemListStart
+    	\resumeItem {\textbf{Coursework}: Algorithms, Data mining and Machine Learning, Systems Programming, Data Structure, Computer Architecture}
+        \resumeItem 
+            {\textbf{Clubs}: KSEA, Purdue Hackers(PR Lead), SIGBOTS, KASA, AAA}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Programming Languages} {: Python, JavaScript (React.js), HTML/CSS, Java, C++, C, Unity (Beginner)}\vspace{2pt} \\
+     \textbf{Tools}     {: Figma, Notion, Jira, GitHub, Illustrator, Photoshop, InDesign, Animate}\vspace{2pt} \\
+     \textbf{Language}     {: Korean, English}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
